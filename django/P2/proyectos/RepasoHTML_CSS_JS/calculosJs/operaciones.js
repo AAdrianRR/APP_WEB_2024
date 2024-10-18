@@ -1,17 +1,36 @@
-function operacion(){
-    let n1=parseInt(document.getElementById("n1").value);
-    let n2=parseInt(document.getElementById("n2").value);
-    let tipoope= document.getElementById("tipo");
+function operacion() {
+    // Obtener los valores ingresados en los campos de número
+    let num1 = parseFloat(document.getElementById("n1").value);
+    let num2 = parseFloat(document.getElementById("n2").value);
+    
+    // Obtener el tipo de operación seleccionada
+    let tipo = document.getElementById("tipo").value;
 
+    // Declarar una variable para almacenar el resultado
+    let resultado = 0;
 
-switch(tipoope)
-{
-    case "suma": ope,a=n1+n2;break
-    case "resta": ope=n1-n2;break
-    case "mumpliplicacion": ope= n1*n2;break;
-    case "division": ope = n1/n2;break
+    // Verificar qué operación se seleccionó y realizar la operación
+    switch (tipo) {
+        case "+":
+            resultado = num1 + num2;
+            break;
+        case "-":
+            resultado = num1 - num2;
+            break;
+        case "*":
+            resultado = num1 * num2;
+            break;
+        case "/":
+            if (num2 !== 0) {
+                resultado = num1 / num2;
+            } else {
+                resultado = "Error: División por cero";
+            }
+            break;
+        default:
+            resultado = "Operación no válida";
+    }
+
+    // Mostrar el resultado en la sección de resultado
+    document.getElementById("resultado").textContent = "Resultado: " + resultado;
 }
-    
-let.resul=document.getElementById("resultado")
-resul.innerHTML= 
-    
