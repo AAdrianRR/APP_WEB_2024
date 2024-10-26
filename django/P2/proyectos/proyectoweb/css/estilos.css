@@ -1,4 +1,4 @@
-/* Aplicar estilos generales  */
+/* Aplicar estilos generales */
 body {
     margin: 0;
     padding: 0;
@@ -8,8 +8,8 @@ body {
 /* APLICAR ESTILOS A EL HEADER "INICIO" */
 #inicio {
     background-image: url(../img/fondo1.jpg);
-    height: 100vmin;
-    background-size: cover;    
+    height: 100vh; /* Corregido '100miv' por '100vh' */
+    background-size: cover;
 }
 
 .contenedor {
@@ -18,26 +18,29 @@ body {
     max-width: 1920px;
 }
 
-/* Ajustar el menú */
 .menu {
-    display: flex; /* Asegura que el contenido del menú esté en una línea */
-    justify-content: space-between; /* Espacio entre el texto y la lista */
-    align-items: center; /* Alinear verticalmente */
+    display: flex;
+    justify-content: space-between; /* Añadido justify-content */
+    align-items: center;
+}
+
+.menu p {
+    display: inline;
     font-size: 2vmax;
-    color: black;
+    color: black; /* Corregido 'black+' por 'black' */
     font-weight: bold;
     font-style: italic;
 }
 
 .lista {
-    display: flex; /* Alinea los elementos de la lista en fila */
-    list-style-type: none; /* Quita los puntos de la lista */
-    margin: 0; /* Quita el margin */
-    padding: 0; /* Quita el padding */
+    display: flex;
+    list-style-type: none;
+    font-size: 1.5vw; /* Corregido '1.5' por '1.5vw' */
 }
 
 .lista li {
-    margin-left: 1.5vw; /* Espacio entre los elementos de la lista */
+    margin-left: 1.5vw;
+    justify-content: center;
 }
 
 .btn-menu {
@@ -59,7 +62,6 @@ body {
     color: #5db8f8;
 }
 
-/* Estilos para la sección titular */
 .titular {
     margin-top: 12rem;
     text-align: center;
@@ -67,11 +69,6 @@ body {
 
 .titular h1 {
     font-size: 4vw;
-    margin: 0;
-}
-
-.titular h2 {
-    font-size: 2.5vw;
     margin-bottom: 4vw;
 }
 
@@ -84,15 +81,10 @@ body {
 }
 
 .btn:hover {
-    font-size: 1.1vw;
+    font-size: 1.1vw; /* Corregido 'vh' por 'vw' */
 }
 
-.btn:active {
-    background-color: #f0ea328a;
-    color: black;
-}
-
-/* Aplicar estilos a la seccion "sobremi" */
+/* Aplicar estilos a la sección "sobremi" */
 .contenedor h3 {
     margin-top: 3rem;
     font-size: 7vmin;
@@ -100,18 +92,10 @@ body {
     font-weight: bold;
 }
 
-.contenedor-sobremi img {
+.contenedor-sobremi .img {
     border-radius: 50%;
-    box-shadow: 5px 5px 5px 5px #5db8f8;
+    box-shadow: 5px 5px 5px #5db8f8;
     width: 40vw;
-}
-
-.contenedor-sobremi img:hover {
-    border-radius: 20%;
-}
-
-.contenedor-parrafo-y-boton {
-    width: 45%;
 }
 
 .contenedor-parrafo-y-boton p {
@@ -132,7 +116,6 @@ body {
     text-decoration: underline;
     font-size: 2vw;
     font-weight: bold;
-    margin-bottom: 2rem;
 }
 
 .email:hover {
@@ -145,7 +128,7 @@ body {
     color: #5db8f8;
 }
 
-/* APLICAR ESTILOS A LA SECCION "SERVICIOS" */
+/* APLICAR ESTILOS A LA SECCIÓN "SERVICIOS" */
 .contenedor-servicios {
     display: flex;
     flex-wrap: wrap;
@@ -156,8 +139,8 @@ body {
     width: 23%;
     padding: 2vw;
     border-radius: 20%;
+    border: 1px solid black;
     margin-bottom: 2vw;
-    color: white;
 }
 
 .servicio p {
@@ -176,30 +159,14 @@ body {
     background-color: #5db8f8;
 }
 
-/* Aplicar estilos a el atributo class */
-[class^="icon-"] {
-    font-size: 5vmin;
-    float: right;
-}
+/* Aplicar estilos a la clase burbuja */
 
-.icon-arrow-up {
-    color: #5db8f8;
-    margin-left: 2rem;
-    float: left;
-    text-decoration: none;
-    font-size: 5vmin;
-}
 
-/* Aplicar estilos al pie */
-.burbujas {
-    text-align: center;
+.incon-arrow-up{
+    color 
 }
+[class="icion"]{
 
-.burbujaall img {
-    width: 5vmin;
-    height: 5vmin;
 }
+  /* No hay estilos definidos, agrega los que necesites */
 
-.burbujas {
-    font-size: 1.5vmin;
-}
