@@ -31,6 +31,6 @@ function operacion() {
             resultado = "Operación no válida";
     }
 
-    // Mostrar el resultado en la sección de resultado
+    
     document.getElementById("resultado").textContent = "Resultado: " + resultado;
 }
